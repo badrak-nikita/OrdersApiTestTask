@@ -1,0 +1,5 @@
+Тесты:
+APP_ENV=test DATABASE_URL="mysql://root:12348765@127.0.0.1:3306/ordersApiTest_db?serverVersion=8.0.32&charset=utf8mb4" php vendor/bin/codecept run Functional
+
+Воркер:
+php bin/console messenger:consume async -vv
